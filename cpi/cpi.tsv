@@ -1,0 +1,181 @@
+Country	ISO3	Region	CPI score 2019
+Denmark	DNK	WE/EU	87
+New Zealand	NZL	AP	87
+Finland	FIN	WE/EU	86
+Singapore	SGP	AP	85
+Sweden	SWE	WE/EU	85
+Switzerland	CHE	WE/EU	85
+Norway	NOR	WE/EU	84
+Netherlands	NLD	WE/EU	82
+Germany	DEU	WE/EU	80
+Luxembourg	LUX	WE/EU	80
+Iceland	ISL	WE/EU	78
+Australia	AUS	AP	77
+Austria	AUT	WE/EU	77
+Canada	CAN	AME	77
+United Kingdom	GBR	WE/EU	77
+Hong Kong	HKG	AP	76
+Belgium	BEL	WE/EU	75
+Estonia	EST	WE/EU	74
+Ireland	IRL	WE/EU	74
+Japan	JPN	AP	73
+United Arab Emirates	ARE	MENA	71
+Uruguay	URY	AME	71
+France	FRA	WE/EU	69
+United States of America	USA	AME	69
+Bhutan	BTN	AP	68
+Chile	CHL	AME	67
+Seychelles	SYC	SSA	66
+Taiwan	TWN	AP	65
+Bahamas	BHS	AME	64
+Barbados	BRB	AME	62
+Portugal	PRT	WE/EU	62
+Qatar	QAT	MENA	62
+Spain	ESP	WE/EU	62
+Botswana	BWA	SSA	61
+Brunei Darussalam	BRN	AP	60
+Israel	ISR	MENA	60
+Lithuania	LTU	WE/EU	60
+Slovenia	SVN	WE/EU	60
+"Korea, South"	KOR	AP	59
+Saint Vincent and the Grenadines	VCT	AME	59
+Cabo Verde	CPV	SSA	58
+Cyprus	CYP	WE/EU	58
+Poland	POL	WE/EU	58
+Costa Rica	CRI	AME	56
+Czech Republic	CZE	WE/EU	56
+Georgia	GEO	ECA	56
+Latvia	LVA	WE/EU	56
+Dominica	DMA	AME	55
+Saint Lucia	LCA	AME	55
+Malta	MLT	WE/EU	54
+Grenada	GRD	AME	53
+Italy	ITA	WE/EU	53
+Malaysia	MYS	AP	53
+Rwanda	RWA	SSA	53
+Saudi Arabia	SAU	MENA	53
+Mauritius	MUS	SSA	52
+Namibia	NAM	SSA	52
+Oman	OMN	MENA	52
+Slovakia	SVK	WE/EU	50
+Cuba	CUB	AME	48
+Greece	GRC	WE/EU	48
+Jordan	JOR	MENA	48
+Croatia	HRV	WE/EU	47
+Sao Tome and Principe	STP	SSA	46
+Vanuatu	VUT	AP	46
+Argentina	ARG	AME	45
+Belarus	BLR	ECA	45
+Montenegro	MNE	ECA	45
+Senegal	SEN	SSA	45
+Hungary	HUN	WE/EU	44
+Romania	ROU	WE/EU	44
+South Africa	ZAF	SSA	44
+Suriname	SUR	AME	44
+Bulgaria	BGR	WE/EU	43
+Jamaica	JAM	AME	43
+Tunisia	TUN	MENA	43
+Armenia	ARM	ECA	42
+Bahrain	BHR	MENA	42
+Solomon Islands	SLB	AP	42
+Benin	BEN	SSA	41
+China	CHN	AP	41
+Ghana	GHA	SSA	41
+India	IND	AP	41
+Morocco	MAR	MENA	41
+Burkina Faso	BFA	SSA	40
+Guyana	GUY	AME	40
+Indonesia	IDN	AP	40
+Kuwait	KWT	MENA	40
+Lesotho	LSO	SSA	40
+Trinidad and Tobago	TTO	AME	40
+Serbia	SRB	ECA	39
+Turkey	TUR	ECA	39
+Ecuador	ECU	AME	38
+Sri Lanka	LKA	AP	38
+Timor-Leste	TLS	AP	38
+Colombia	COL	AME	37
+Ethiopia	ETH	SSA	37
+Gambia	GMB	SSA	37
+Tanzania	TZA	SSA	37
+Vietnam	VNM	AP	37
+Bosnia and Herzegovina	BIH	ECA	36
+Kosovo	KSV	ECA	36
+Panama	PAN	AME	36
+Peru	PER	AME	36
+Thailand	THA	AP	36
+Albania	ALB	ECA	35
+Algeria	DZA	MENA	35
+Brazil	BRA	AME	35
+Cote d'Ivoire	CIV	SSA	35
+Egypt	EGY	MENA	35
+North Macedonia	MKD	ECA	35
+Mongolia	MNG	AP	35
+El Salvador	SLV	AME	34
+Kazakhstan	KAZ	ECA	34
+Nepal	NPL	AP	34
+Philippines	PHL	AP	34
+Eswatini	SWZ	SSA	34
+Zambia	ZMB	SSA	34
+Sierra Leone	SLE	SSA	33
+Moldova	MDA	ECA	32
+Niger	NER	SSA	32
+Pakistan	PAK	AP	32
+Bolivia	BOL	AME	31
+Gabon	GAB	SSA	31
+Malawi	MWI	SSA	31
+Azerbaijan	AZE	ECA	30
+Djibouti	DJI	SSA	30
+Kyrgyzstan	KGZ	ECA	30
+Ukraine	UKR	ECA	30
+Guinea	GIN	SSA	29
+Laos	LAO	AP	29
+Maldives	MDV	AP	29
+Mali	MLI	SSA	29
+Mexico	MEX	AME	29
+Myanmar	MMR	AP	29
+Togo	TGO	SSA	29
+Dominican Republic	DOM	AME	28
+Kenya	KEN	SSA	28
+Lebanon	LBN	MENA	28
+Liberia	LBR	SSA	28
+Mauritania	MRT	SSA	28
+Papua New Guinea	PNG	AP	28
+Paraguay	PRY	AME	28
+Russia	RUS	ECA	28
+Uganda	UGA	SSA	28
+Angola	AGO	SSA	26
+Bangladesh	BGD	AP	26
+Guatemala	GTM	AME	26
+Honduras	HND	AME	26
+Iran	IRN	MENA	26
+Mozambique	MOZ	SSA	26
+Nigeria	NGA	SSA	26
+Cameroon	CMR	SSA	25
+Central African Republic	CAF	SSA	25
+Comoros	COM	SSA	25
+Tajikistan	TJK	ECA	25
+Uzbekistan	UZB	ECA	25
+Madagascar	MDG	SSA	24
+Zimbabwe	ZWE	SSA	24
+Eritrea	ERI	SSA	23
+Nicaragua	NIC	AME	22
+Cambodia	KHM	AP	20
+Chad	TCD	SSA	20
+Iraq	IRQ	MENA	20
+Burundi	BDI	SSA	19
+Congo	COG	SSA	19
+Turkmenistan	TKM	ECA	19
+Democratic Republic of the Congo	COD	SSA	18
+Guinea Bissau	GNB	SSA	18
+Haiti	HTI	AME	18
+Libya	LBY	MENA	18
+"Korea, North"	PRK	AP	17
+Afghanistan	AFG	AP	16
+Equatorial Guinea	GNQ	SSA	16
+Sudan	SDN	SSA	16
+Venezuela	VEN	AME	16
+Yemen	YEM	MENA	15
+Syria	SYR	MENA	13
+South Sudan	SSD	SSA	12
+Somalia	SOM	SSA	9
