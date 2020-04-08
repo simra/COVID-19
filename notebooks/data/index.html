@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>COVID-19 Plots</title>
+        <style type='text/css'>
+            h1 {font-family:sans-serif}
+            #maindiv {margin-left:150px;margin-right:100px;}
+            
+
+            img {
+                vertical-align: middle;
+            }
+
+            #menudiv {
+                font-family: sans-serif;
+                float:left;
+                position: fixed;
+                top: 0%;                
+                margin-top: 100px;
+            }
+            #menu {
+                border: 2px solid;
+                padding: 10px;
+                margin:10px;
+            }
+
+            .selected {
+                background-color: yellow;
+            }
+            .noZoom  { display:none; }
+            .zoom {
+                display:block; 
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                height:100%;
+                width:100%;
+                box-shadow: 0.5em 0.5em 0.7em #333;
+                border-radius: 1em;                
+                margin-left: 150px;
+                margin-right: 0px;
+                /*margin-left:auto;*/
+                /*margin-right: auto;  */
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <script language='javascript'>
+            
+            function clearNodes(e) {
+                while (e.hasChildNodes()) {
+                    e.removeChild(e.lastChild);
+                }
+            }
+            currentId=0;
+
+            function createDivFromHTML(html) {
+                var div = document.createElement('div');
+                div.innerHTML=html;
+                return div.firstChild;
+            }
+
+            function zoom(path) {
+                e = document.getElementById('zoomDiv');
+                clearNodes(e);
+                e.className='zoom';
+                console.log(path)
+                e.onclick = function() {
+                    e.className='noZoom';                    
+                }
+                e.appendChild(createDivFromHTML('<img src="'+path+'" height=100% />'));
+                
+            }
+
+            function createImageFromHTML(imagePath,date) {
+                var div = document.createElement('div');
+                var path= date+'/'+imagePath;
+                //div.innerHTML = '<a href="'+date+'/'+imagePath+'"><img src="'+date+'/'+imagePath+'" style="width:30%" onerror="this.style.display=\'none\'" onclick="zoom('+'" /></a>';  
+                div.innerHTML = '<img src="'+path+'" style="width:30%" onerror="this.style.display=\'none\'" onclick="zoom(\''+path+'\')" />';  
+                //currentId+=1;
+                // Change this to div.childNodes to support multiple top-level nodes                
+                return div.firstChild; 
+            }
+
+            function setDate(d) {
+                clearNodes(document.getElementById('ww'));   
+                clearNodes(document.getElementById('us'));  
+                clearNodes(document.getElementById('can'));               
+                ww.forEach(element => {
+                    console.log(element);
+                document.getElementById('ww').appendChild(createImageFromHTML(element,d));
+                });
+                us.forEach(element => {
+                    console.log(element);
+                document.getElementById('us').appendChild(createImageFromHTML(element,d));
+                });
+                can.forEach(element => {
+                    console.log(element);
+                document.getElementById('can').appendChild(createImageFromHTML(element,d));
+                });
+
+                document.getElementById('menu').childNodes.forEach(e => {
+                    if (e.id=='menu'+d) {
+                        e.className = 'selected';                        
+                    } else {
+                        e.className = 'unselected';
+                    }
+                });
+            }
+            
+
+            window.onload = function(e) {
+                // todo: automate
+                dates = [
+                '20200324','20200325','20200326','20200327','20200328','20200329','20200330','20200331',
+                '20200401','20200402','20200403','20200404','20200405','20200406', '20200407'
+                ];
+                
+                ww = ['1_countryshift.png',
+                '2_countryshift_norm.png',
+                '3_growth.png',
+                '5_barplots.png',
+                '7_world.png' ,
+                '10_countvsgrowth.png' ,
+                '14_countryshift_norm-deaths.png', 
+                '14_growthvsactive.png' ,
+                '15_deathsvsconfirmed.png' 
+                ];
+                us = [
+                '9_usstates.png', 
+                '6_euus.png',
+                '11_usstatesgrowth.png',
+                '16_usbarplots.png',
+                '13_icubeds.png',
+                '17_tests.png'
+                
+                ];
+                can = [
+                '8_canada.png',
+                '12_canadagrowth.png',
+                '16_canada_normalized.png'    
+                ];
+                
+
+                dates.forEach(d => {
+                    menu=document.getElementById('menu');   
+                    var dateStr = d+'';
+                    var year = dateStr.slice(0,4);
+                    var month = dateStr.slice(4,6);
+                    var day = dateStr.slice(6,8);
+                    dateStr = year+'-'+month+'-'+day;
+                    menu.insertBefore(createDivFromHTML(
+                        "<div id='menu"+d+"' class='unselected' onclick='setDate("+d+")'>"+dateStr+"</div>"
+                    ), menu.firstChild);
+                });
+                
+                var currentDate = dates[dates.length-1];
+                setDate(currentDate);
+            };
+            
+        </script>
+        <div id='zoomDiv' class='noZoom'></div>
+        <a name="top"></a>
+        Jump to: <a href="#usa">US</a> <a href="#canada">Canada</a> <a href="#about">About</a>
+        <div id='menudiv'>
+            Choose a date:
+            <br>
+        <div id='menu'></div>
+        </div>
+        <div id='maindiv'>
+        <h1> World-wide</h1>        
+        <div id='ww'>
+            <!-- <a href='1_countryshift.png'><img src='1_countryshift.png' width='30%' /> </a> -->
+            
+        </div>
+        
+        <a name="usa"></a>
+        <h1>US</h1>
+        <a href="#top">back to top</a>
+        <div id='us'>
+            
+        </div>
+        <a name="canada"><h1>Canada</h1></a>
+        <a href="#top">back to top</a>
+        <div id='can'>                        
+        </div>
+
+        <a name = "about"><h1>About this page</h1></a>
+        <p>These are plots I've been posting to facebook throughout the COVID-19 pandemic. You'll find that not every date has every plot, since I added some over time.
+        The main goal of this page is to make the plots marginally more browsable and organized, compared to how they're delivered on Facebook. Yes, interactive plots would be nicer. No, I don't really have the time to do that. And no, I'm obviously not a web dev in my day job. &#129315;</p>
+        <br><br>
+        Data sources: <a href="https://systems.jhu.edu/research/public-health/ncov/">Johns Hopkins</a> and <a href="https://covidtracking.com">The COVID Tracking Project.</a> 
+        <br>
+        Code: <a href="https://github.com/simra/COVID-19">https://github.com/simra/COVID-19</a>
+        <br>
+        Issues? Contact me on github by opening an issue. 
+    </div>
+        
+
+    </body>
+</html>
