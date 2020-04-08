@@ -1,4 +1,4 @@
 .DS_Store
 debug.log
 *-checkpoint.ipynb
-notebooks/data/
+notebooks/data/*/*

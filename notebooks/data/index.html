@@ -3,7 +3,7 @@
         <title>COVID-19 Plots</title>
         <style type='text/css'>
             h1 {font-family:sans-serif}
-            #maindiv {margin-left:150px;margin-right:100px;}
+            #maindiv {margin-left:150px;margin-right:100px;margin-top:10px;}
             
 
             img {
@@ -36,8 +36,9 @@
                 width:100%;
                 box-shadow: 0.5em 0.5em 0.7em #333;
                 border-radius: 1em;                
-                margin-left: 150px;
-                margin-right: 0px;
+                padding-left: 150px;
+                padding-right: 0px;
+                background-color: #99999999;
                 /*margin-left:auto;*/
                 /*margin-right: auto;  */
             }
@@ -169,6 +170,7 @@
         <div id='menu'></div>
         </div>
         <div id='maindiv'>
+            Click on a plot to enlarge. Click again to restore.
         <h1> World-wide</h1>        
         <div id='ww'>
             <!-- <a href='1_countryshift.png'><img src='1_countryshift.png' width='30%' /> </a> -->
@@ -190,11 +192,16 @@
         <p>These are plots I've been posting to facebook throughout the COVID-19 pandemic. You'll find that not every date has every plot, since I added some over time.
         The main goal of this page is to make the plots marginally more browsable and organized, compared to how they're delivered on Facebook. Yes, interactive plots would be nicer. No, I don't really have the time to do that. And no, I'm obviously not a web dev in my day job. &#129315;</p>
         <br><br>
-        Data sources: <a href="https://systems.jhu.edu/research/public-health/ncov/">Johns Hopkins</a> and <a href="https://covidtracking.com">The COVID Tracking Project.</a> 
+        Data sources: 
+        <ul>
+            <li><a href="https://systems.jhu.edu/research/public-health/ncov/">Johns Hopkins</a></li>  
+            <li><a href="https://covidtracking.com">The COVID Tracking Project.</a></li>
+            <li>ICU Data: <a href="https://www.kff.org/other/state-indicator/beds-by-ownership/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">kff.org</a></li>
+            <li>State population data from census.gov</li>
+            <li>World and Canadian population data from wikipedia.org</li>
+        </ul>
         <br>
-        Code: <a href="https://github.com/simra/COVID-19">https://github.com/simra/COVID-19</a>
-        <br>
-        Issues? Contact me on github by opening an issue. 
+        Code: <a href="https://github.com/simra/COVID-19">https://github.com/simra/COVID-19</a> Issues? Questions? Contact me on github by opening an issue. 
     </div>
         
 
