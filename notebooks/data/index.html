@@ -8,6 +8,7 @@
 
             img {
                 vertical-align: middle;
+                max-width: 100vw;
             }
 
             #menudiv {
@@ -27,7 +28,7 @@
                 background-color: yellow;
             }
             .noZoom  { display:none; }
-            .zoom {
+            .zoomWide {
                 display:block; 
                 position: fixed;
                 top: 0%;
@@ -42,12 +43,22 @@
                 /*margin-left:auto;*/
                 /*margin-right: auto;  */
             }
-            @media (max-aspect-ratio: 1/1 ) {
-                .zoom {
-                    width:100%;
-                    height:auto;
-                }
-            }
+            
+            .zoomNarrow {
+                display:block; 
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                height:100%;
+                width:100%;
+                max-width: 100vw;
+                box-shadow: 0.5em 0.5em 0.7em #333;
+                border-radius: 1em;                
+                padding-left: 0px;
+                padding-right: 0px;
+                background-color: #99999999;
+                z-index: 5;
+            }            
 
         </style>
 
@@ -71,7 +82,15 @@
             function zoom(path) {
                 e = document.getElementById('zoomDiv');
                 clearNodes(e);
-                e.className='zoom';
+                var vw = window.innerWidth; //Math.max(document.documentElement.clientWidth,  0);
+                var vh = window.innerHeight; //Math.max(document.documentElement.clientHeight, 0);
+                console.log(vw+' '+vh);
+                //e.className='zoomNarrow';
+                if (vw<vh) {
+                    e.className='zoomNarrow';
+                } else {
+                    e.className='zoomWide';
+                }
                 console.log(path)
                 e.onclick = function() {
                     e.className='noZoom';                    
@@ -121,8 +140,9 @@
                 // todo: automate
                 dates = [
                 '20200324','20200325','20200326','20200327','20200328','20200329','20200330','20200331',
-                '20200401','20200402','20200403','20200404','20200405','20200406', '20200407', '20200408'
-                ];
+                '20200401','20200402','20200403','20200404','20200405','20200406', '20200407', '20200408',
+                '20200409'    
+            ];
                 
                 ww = ['1_countryshift.png',
                 '2_countryshift_norm.png',
@@ -140,7 +160,8 @@
                 '11_usstatesgrowth.png',
                 '16_usbarplots.png',
                 '13_icubeds.png',
-                '17_tests.png'
+                '17_tests.png',
+                '18_newcases.png'
                 
                 ];
                 can = [
