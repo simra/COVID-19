@@ -1,9 +1,12 @@
 <html>
     <head>
         <title>COVID-19 Plots</title>
+       <link rel="stylesheet" type="text/css" href="dist/mtr-datepicker.min.css?rel=1510749724090" />
+        <link rel="stylesheet" type="text/css" href="dist/mtr-datepicker.default-theme.min.css?rel=1510749724093" /> 
+    
         <style type='text/css'>
             h1 {font-family:sans-serif}
-            #maindiv {margin-left:150px;margin-right:100px;margin-top:10px;}
+            #maindiv {margin-left:200px;margin-right:100px;margin-top:10px; overflow:auto}
             
 
             img {
@@ -37,7 +40,7 @@
                 width:100%;
                 box-shadow: 0.5em 0.5em 0.7em #333;
                 border-radius: 1em;                
-                padding-left: 150px;
+                padding-left: 200px;
                 padding-right: 0px;
                 background-color: #99999999;
                 /*margin-left:auto;*/
@@ -125,14 +128,14 @@
                     console.log(element);
                 document.getElementById('can').appendChild(createImageFromHTML(element,d));
                 });
-
+                /*
                 document.getElementById('menu').childNodes.forEach(e => {
                     if (e.id=='menu'+d) {
                         e.className = 'selected';                        
                     } else {
                         e.className = 'unselected';
                     }
-                });
+                });*/
             }
             
 
@@ -146,7 +149,11 @@
                 '20200424', '20200425', '20200426', '20200427', '20200428', '20200429', '20200430',
                 '20200501', '20200502', '20200503', '20200504', '20200505', '20200506', '20200507', '20200508',
                 '20200509', '20200510', '20200511', '20200512', '20200513', '20200514', '20200515', '20200516',
-                '20200517', '20200518', '20200519', '20200520'
+                '20200517', '20200518', '20200519', '20200520', '20200521', '20200522', '20200523', '20200524',
+                '20200525', '20200526', '20200527', '20200528', '20200529', '20200530', '20200531', '20200501',
+                '20200602', '20200603', '20200604', '20200605', '20200606', '20200607', '20200608', '20200609',
+                '20200610', '20200611', '20200612', '20200613', '20200614', '20200615', '20200616', '20200617',
+                '20200618', '20200619', '20200620', '20200621', '20200622', '20200623', '20200624'
             ];
                 
                 ww = ['1_countryshift.png',
@@ -183,7 +190,7 @@
                 '21_fatalities_province.png'
                 ];
                 
-
+                /*
                 dates.forEach(d => {
                     menu=document.getElementById('menu');   
                     var dateStr = d+'';
@@ -194,21 +201,37 @@
                     menu.insertBefore(createDivFromHTML(
                         "<div id='menu"+d+"' class='unselected' onclick='setDate("+d+")'>"+dateStr+"</div>"
                     ), menu.firstChild);
-                });
+                });*/
                 
                 var currentDate = dates[dates.length-1];
+                //setDate(currentDate);
+                var initDate = new Date(2020, 02, 24);
+                var datepicker = new MtrDatepicker({
+                    target: 'datepicker-demo-custom',
+                    timestamp: initDate.getTime(),
+                });
+                
+                datepicker.onChange('all', function() {
+                    setDate(datepicker.format('YYYYMMDD'));
+                    });
                 setDate(currentDate);
             };
             
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>    
+        <script type="text/javascript" src="scripts/mtr-datepicker-timezones.js"></script>
+        <script type="text/javascript" src="scripts/mtr-datepicker.js"></script>
+        
         <div id='zoomDiv' class='noZoom'></div>
         <a name="top"></a>
         Jump to: <a href="#usa">US</a> <a href="#canada">Canada</a> <a href="#about">About</a>
         <div id='menudiv'>
             Choose a date:
             <br>
-        <div id='menu'></div>
-        </div>
+            <div id="datepicker-demo-custom"></div>
+        <!-- <div id='menu'></div>  -->
+        </div> 
         <div id='maindiv'>
             Click on a plot to enlarge. Click again to restore.
         <h1> World-wide</h1>        
@@ -217,9 +240,9 @@
             
         </div>
         <div>
-            <img src='ladder-0-latest.gif' width='20%'>
-            <img src='ladder-1-latest.gif' width='20%'>
-            <img src='ladder-2-latest.gif' width='20%'>
+            <img src='ladder-0-latest.gif' width='30%'>
+            <img src='ladder-1-latest.gif' width='30%'>
+            <img src='ladder-2-latest.gif' width='30%'>
         </div>
         <a name="usa"></a>
         <h1>US</h1>
@@ -227,8 +250,8 @@
         <div id='us'>
             
         </div>
-        <div id='anim'><img src='animation-latest.gif'></div>
-        <div id='anim'><img src='animation-fill-latest.gif'></div>
+        <!-- <div id='anim'><img src='animation-latest.gif'></div> -->
+        <div id='anim'><img src='animation-fill-latest.gif'></div> 
         <a name="canada"><h1>Canada</h1></a>
         <a href="#top">back to top</a>
         <div id='can'>                        
