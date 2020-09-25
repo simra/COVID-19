@@ -1,4 +1,6 @@
-curl -o covidtracking_daily.csv https://covidtracking.com/api/v1/states/daily.csv
+curl -o covidtracking_daily.csv https://api.covidtracking.com/v1/states/daily.csv
+
+Deprecated: https://covidtracking.com/api/v1/states/daily.csv
 
 Deprecated: curl -L -o covidtracking_daily.csv https://covidtracking.com/api/states/daily.csv
 

@@ -1,0 +1,199 @@
+{
+    "data": [
+        {
+            "CTYNAME": "King County",
+            "Pop": 2233163,
+            "GrowthRate": "15.2080"
+        },
+        {
+            "CTYNAME": "Pierce County",
+            "Pop": 891299,
+            "GrowthRate": "12.0577"
+        },
+        {
+            "CTYNAME": "Snohomish County",
+            "Pop": 814901,
+            "GrowthRate": "13.8914"
+        },
+        {
+            "CTYNAME": "Spokane County",
+            "Pop": 514631,
+            "GrowthRate": "9.0114"
+        },
+        {
+            "CTYNAME": "Clark County",
+            "Pop": 481857,
+            "GrowthRate": "12.9240"
+        },
+        {
+            "CTYNAME": "Thurston County",
+            "Pop": 286419,
+            "GrowthRate": "13.2109"
+        },
+        {
+            "CTYNAME": "Kitsap County",
+            "Pop": 269805,
+            "GrowthRate": "7.2033"
+        },
+        {
+            "CTYNAME": "Yakima County",
+            "Pop": 251446,
+            "GrowthRate": "2.9382"
+        },
+        {
+            "CTYNAME": "Whatcom County",
+            "Pop": 225685,
+            "GrowthRate": "11.9764"
+        },
+        {
+            "CTYNAME": "Benton County",
+            "Pop": 201877,
+            "GrowthRate": "14.4006"
+        },
+        {
+            "CTYNAME": "Skagit County",
+            "Pop": 128206,
+            "GrowthRate": "9.6209"
+        },
+        {
+            "CTYNAME": "Cowlitz County",
+            "Pop": 108987,
+            "GrowthRate": "6.4773"
+        },
+        {
+            "CTYNAME": "Grant County",
+            "Pop": 97331,
+            "GrowthRate": "8.6659"
+        },
+        {
+            "CTYNAME": "Franklin County",
+            "Pop": 94347,
+            "GrowthRate": "19.3012"
+        },
+        {
+            "CTYNAME": "Island County",
+            "Pop": 84460,
+            "GrowthRate": "7.3326"
+        },
+        {
+            "CTYNAME": "Lewis County",
+            "Pop": 79604,
+            "GrowthRate": "5.4288"
+        },
+        {
+            "CTYNAME": "Chelan County",
+            "Pop": 77036,
+            "GrowthRate": "5.8827"
+        },
+        {
+            "CTYNAME": "Clallam County",
+            "Pop": 76737,
+            "GrowthRate": "7.3110"
+        },
+        {
+            "CTYNAME": "Grays Harbor County",
+            "Pop": 73901,
+            "GrowthRate": "1.4524"
+        },
+        {
+            "CTYNAME": "Mason County",
+            "Pop": 65507,
+            "GrowthRate": "7.8571"
+        },
+        {
+            "CTYNAME": "Walla Walla County",
+            "Pop": 60922,
+            "GrowthRate": "3.3978"
+        },
+        {
+            "CTYNAME": "Whitman County",
+            "Pop": 49791,
+            "GrowthRate": "11.1555"
+        },
+        {
+            "CTYNAME": "Kittitas County",
+            "Pop": 47364,
+            "GrowthRate": "15.5530"
+        },
+        {
+            "CTYNAME": "Stevens County",
+            "Pop": 45260,
+            "GrowthRate": "4.1322"
+        },
+        {
+            "CTYNAME": "Douglas County",
+            "Pop": 42907,
+            "GrowthRate": "11.4033"
+        },
+        {
+            "CTYNAME": "Okanogan County",
+            "Pop": 42132,
+            "GrowthRate": "2.1902"
+        },
+        {
+            "CTYNAME": "Jefferson County",
+            "Pop": 31729,
+            "GrowthRate": "6.1490"
+        },
+        {
+            "CTYNAME": "Asotin County",
+            "Pop": 22610,
+            "GrowthRate": "4.0736"
+        },
+        {
+            "CTYNAME": "Klickitat County",
+            "Pop": 22107,
+            "GrowthRate": "8.4953"
+        },
+        {
+            "CTYNAME": "Pacific County",
+            "Pop": 22036,
+            "GrowthRate": "5.5465"
+        },
+        {
+            "CTYNAME": "Adams County",
+            "Pop": 19759,
+            "GrowthRate": "5.1626"
+        },
+        {
+            "CTYNAME": "San Juan County",
+            "Pop": 17128,
+            "GrowthRate": "8.5150"
+        },
+        {
+            "CTYNAME": "Pend Oreille County",
+            "Pop": 13602,
+            "GrowthRate": "5.0429"
+        },
+        {
+            "CTYNAME": "Skamania County",
+            "Pop": 11924,
+            "GrowthRate": "7.2785"
+        },
+        {
+            "CTYNAME": "Lincoln County",
+            "Pop": 10740,
+            "GrowthRate": "1.5603"
+        },
+        {
+            "CTYNAME": "Ferry County",
+            "Pop": 7649,
+            "GrowthRate": "1.3918"
+        },
+        {
+            "CTYNAME": "Wahkiakum County",
+            "Pop": 4426,
+            "GrowthRate": "11.1223"
+        },
+        {
+            "CTYNAME": "Columbia County",
+            "Pop": 4059,
+            "GrowthRate": "-0.8549"
+        },
+        {
+            "CTYNAME": "Garfield County",
+            "Pop": 2247,
+            "GrowthRate": "-0.6192"
+        }
+    ]
+}
