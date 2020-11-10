@@ -30,8 +30,8 @@ MM-DD-YYYY.csv in UTC.
 * <b>Deaths</b>: Counts include confirmed and probable (where reported).
 * <b>Recovered</b>: Recovered cases are estimates based on local media reports, and state and local reporting when available, and therefore may be substantially lower than the true number. US state-level recovered cases are from [COVID Tracking Project](https://covidtracking.com/).
 * <b>Active:</b> Active cases = total cases - total recovered - total deaths.
-* <b>Incidence_Rate</b>: Incidence Rate = cases per 100,000 persons.
-* <b>Case-Fatality Ratio (%)</b>: Case-Fatality Ratio (%) = Number recorded deaths / Number cases.
+* <b>Incident_Rate</b>: Incidence Rate = cases per 100,000 persons.
+* <b>Case_Fatality_Ratio (%)</b>: Case-Fatality Ratio (%) = Number recorded deaths / Number cases.
 * All cases, deaths, and recoveries reported are based on the date of initial report. Exceptions to this are noted in the "Data Modification" and "Retrospective reporting of (probable) cases and deaths" subsections below.  
 
 ### Update frequency
@@ -68,9 +68,9 @@ MM-DD-YYYY.csv in UTC.
 * <b>Active</b> - Aggregated confirmed cases that have not been resolved (Active cases = total cases - total recovered - total deaths).
 * <b>FIPS</b> - Federal Information Processing Standards code that uniquely identifies counties within the USA.
 * <b>Incident_Rate</b> - cases per 100,000 persons.
-* <b>People_Tested</b> - Total number of people who have been tested.
+* <b>Total_Test_Results</b> - Total number of people who have been tested.
 * <b>People_Hospitalized</b> - Total number of people hospitalized. (Nullified on Aug 31, see [Issue #3083](https://github.com/CSSEGISandData/COVID-19/issues/3083))
-* <b>Mortality_Rate</b> - Number recorded deaths * 100/ Number confirmed cases.
+* <b>Case_Fatality_Ratio</b> - Number recorded deaths * 100/ Number confirmed cases.
 * <b>UID</b> - Unique Identifier for each row entry. 
 * <b>ISO3</b> - Officialy assigned country code identifiers.
 * <b>Testing_Rate</b> - Total test results per 100,000 persons. The "total test results" are equal to "Total test results (Positive + Negative)" from [COVID Tracking Project](https://covidtracking.com/).
@@ -150,6 +150,7 @@ Date: Location | Change | Files affected | Reason/Other notes | Source
 * November 9: Puerto Rico, US | Revision of historical data in line with clarification from the Puerto Rican health department regarding suspected versus probable cases | time_series_covid19_cases_US.csv, time_series_covid19_cases_global.csv | Prior to November 7, Puerto Rico suspected cases were serology test results, which are incongruent with our working definition of probable cases. The breakdown is now indicated and we have used historical reporting to alter our previous reported totals. This change brings reporting for the territory in line with national reporting for the rest of the US. [Source](http://www.salud.gov.pr/Estadisticas-Registros-y-Publicaciones/Pages/COVID-19.aspx)
 * November 9: Georgia, US | Revision of data from November 3-8 in line with newly published antigen data, taken from coincident reporting with the state dashboard | All time series files and daily reports | [Source](https://dph.georgia.gov/covid-19-daily-status-report)
 * November 9: Kansas, US | Revision of data from September 20 to November 8 to deconflict differences in reporting between state and county sources. Max of source used as ground truth. | All time files and daily reports | [State source](https://www.coronavirus.kdheks.gov/160/COVID-19-in-Kansas), [County source](https://experience.arcgis.com/experience/9a7d44773e4c4a48b3e09e4d8673961b/page/page_18/)
+* November 9: Wisconsin, US | Revision of data beginning October 19th to include probable cases. | All time files and daily reports
 
 ## Retrospective reporting of (probable) cases and deaths
 This section reports instances where large numbers of historical cases or deaths have been reported on a single day. These reports cause anomalous spikes in our time series curves. When available, we liaise with the appropriate health department and distribute the cases or deaths back over the time series. If these are successful, they will be reported in the below section titled "Large Scale Back Distributions". A large proportion of these spikes are due to the release of probable cases or deaths.
